@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import css from "./Navigation.module.css";
 import clsx from "clsx";
 
@@ -15,6 +15,7 @@ export default function Navigation() {
       <NavLink to="/movies" className={getNavLinkClass}>
         Movies
       </NavLink>
+      <Link to="/search"> Search</Link>
     </nav>
   );
 }
